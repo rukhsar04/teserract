@@ -13,3 +13,4 @@ if uploaded_file is not None:
     st.write("Result.....")  
     extractedInformation=pytesseract.image_to_string(img)
     st.title(extractedInformation)  
+    
