@@ -1,6 +1,7 @@
 import streamlit as st
 import pytesseract
 from PIL import Image       # Python Imaging Library, to open image 
+pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
 st.set_option('deprecation.showfileUploaderEncoding',False)   # To ignore warnings
 st.title ("OCR - Optical Character Recognition")               # To print the title 
 st.text("Upload the image")  
